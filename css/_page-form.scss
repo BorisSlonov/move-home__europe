@@ -1,0 +1,14 @@
+.p-form {
+    display: flex;
+    padding: 1rem 0;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .p-form {
+       flex-direction: column;
+    }
+}

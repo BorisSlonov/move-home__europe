@@ -1,0 +1,33 @@
+.text-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.move-info {
+    display: flex;
+    padding-top: 2rem;
+    &__list {
+        margin-top: 1.75rem;
+        font-size: 1.2rem;
+        li:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-top: -60px;
+    }
+}
+
+@media(max-width:768px) {
+    .move-info {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &__img {
+            max-width: 400px;
+            margin-top: -50px;
+        }
+    }
+}
