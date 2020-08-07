@@ -1,0 +1,100 @@
+.page-advantages {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    transform: translateX(-10px);
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.333%;
+    border: 1px solid #1289ea8c;
+    border-radius: 8px;
+    padding-bottom: 2.5rem;
+    transition: all .2s;
+    margin-left: 10px;
+
+
+    &:hover {
+        box-shadow: 0 0 8px #1289ea8c;
+        border: 1px solid #1289ea;
+        transform: translateY(-4px);
+    }
+
+    .advantages-btn {
+        margin-top: auto;
+    }
+
+    &__icon {
+        text-align: center;
+
+        i {
+            display: block;
+            background-color: #128aea;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: .5em 1em;
+            color: #fff;
+            font-size: 3rem;
+        }
+    }
+
+    &__title {
+        padding-left: 0.75rem;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        color: #494949;
+
+        span {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 30%;
+                height: 2px;
+                background-color: #128aea;
+            }
+        }
+
+    }
+
+    &__p-div {
+        margin-top: 2rem;
+        padding-left: 0.75rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+
+}
+
+.advantages-btn {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .advantages {
+        flex-direction: column;
+        transform: translateX(0);
+    }
+
+    .point {
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .point:not(:first-child) {
+        margin-top: 25px;
+    }
+}

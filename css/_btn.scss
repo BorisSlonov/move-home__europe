@@ -1,0 +1,83 @@
+.main-btn {
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: .75em 1.75em;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1.06px;
+    line-height: 1.5;
+    font-size: 1rem;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+
+    &__white {
+        background-color: #fff;
+        color: #1289eac9;
+        box-shadow: 0 25px 46px 3px rgba(255, 255, 255, 0.2);
+        transition: all .3s;
+
+
+        &:hover {
+            box-shadow: 0 25px 46px 3px rgba(255, 255, 255, 0.3);
+            color: #128aea;
+
+        }
+    }
+
+    &__blue {
+        background-color: #1289eae3;
+        color: rgba(255, 255, 255, 0.95);
+        transition: all .3s;
+
+
+        &:hover {
+            box-shadow: 0 25px 46px 3px rgba(20, 145, 241, 0.15);
+            background-color: #128aea;
+            color: #fff;
+
+
+        }
+    }
+}
+
+
+.h2-main {
+    font-size: 2rem;
+    letter-spacing: .35px;
+    color: #494949;
+
+    &__span {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 30%;
+            height: 2px;
+            background-color: #128aea;
+        }
+    }
+
+    &__spanfff {
+        position: relative;
+        color: #fff;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 30%;
+            height: 2px;
+            background-color: #fff;
+        }
+    }
+}
+
+.main-color {
+    color: #128aea;
+}

@@ -1,0 +1,53 @@
+.page-header {
+    background-color: #098aed;
+    color: #fff;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__h1 {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        letter-spacing: 2.25px;
+        font-size: 2rem;
+        line-height: 1.5;
+        
+    }
+
+    &__sub-title {
+        color: #d7e5f1;
+        letter-spacing: 0.45px;
+        font-size: 1.1rem;
+        margin-top: .75em;
+        margin-bottom: 1.25em;
+    }
+
+    &__item:first-child {
+        flex-basis: 70%;
+    }
+
+    &__car-img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+}
+@media(max-width:950px) {
+    .header {
+        flex-direction: column;
+        &__item:first-child {
+            flex-basis: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+}

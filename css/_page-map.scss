@@ -1,0 +1,39 @@
+.page-map {
+    padding: 2rem 0;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+
+    &__item:first-child {
+        flex-basis: 110%;
+        margin-right: 2rem;
+
+    }
+
+    &__p {
+        margin-top: 2rem;
+    }
+
+    .main-btn {
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    .map {
+        flex-direction: column-reverse;
+
+        &__item:first-child {
+            flex-basis: 100%;
+            margin-right: 0;
+            margin-top: 2rem;
+    
+        }
+
+    }
+}
